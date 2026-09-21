@@ -4,12 +4,9 @@ model:
   name: eos-0.1
   architecture: decoder-only-transformer
 
-  # Target — we will first validate everything
-  # with much smaller models.
   parameters_target: 200000000
 
   context_length: 8192
-  vocab_size: 50000
 
   hidden_size: 768
   num_layers: 24
@@ -25,6 +22,10 @@ model:
 
   tie_word_embeddings: true
   dropout: 0.0
+
+tokenizer:
+  source: existing
+  name_or_path: null
 
 data:
   languages:
