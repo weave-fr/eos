@@ -25,7 +25,7 @@ model:
 
 tokenizer:
   source: existing
-  name_or_path: null
+  name_or_path: HuggingFaceTB/SmolLM3-3B
 
 data:
   languages:
