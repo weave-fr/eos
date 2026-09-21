@@ -12,6 +12,7 @@ dependencies = [
     "torch",
     "pyyaml",
     "transformers",
+    "pytest",
 ]
 
 [tool.setuptools.packages.find]
