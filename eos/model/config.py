@@ -7,7 +7,7 @@ from dataclasses import dataclass
 class ModelConfig:
     """Configuration for a decoder-only EOS Transformer."""
 
-    vocab_size: int = 128_256
+    vocab_size: int = 50_000
     context_length: int = 8_192
 
     hidden_size: int = 768
