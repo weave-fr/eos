@@ -77,6 +77,16 @@ class EOSTokenizer:
 
         return self.tokenizer.eos_token_id
 
+    def configure_model_vocab_size(
+        self,
+        model_config,
+    ):
+        """Set the model vocabulary size to match the tokenizer."""
+
+        model_config.vocab_size = self.vocab_size
+
+        return model_config
+
     def save_pretrained(
         self,
         path: str | Path,
